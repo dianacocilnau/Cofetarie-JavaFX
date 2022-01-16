@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cofetarie.cofetarie.AdminController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="810.0" prefWidth="1315.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="1315.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="202.0" fitWidth="332.0" layoutX="1.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../pictures/cake5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="202.0" fitWidth="325.0" layoutX="333.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../pictures/cake4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="202.0" fitWidth="321.0" layoutX="657.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../pictures/cake5.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="202.0" fitWidth="337.0" layoutX="978.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../pictures/cake4.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <HBox prefHeight="608.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="608.0" prefWidth="407.0" style="-fx-background-color: E4DAF0;">
+                     <children>
+                        <Button fx:id="addProductButton" layoutX="110.0" layoutY="134.0" mnemonicParsing="false" onAction="#addProductButtonOnAction" prefHeight="95.0" prefWidth="162.0" text="Introduceti un produs" />
+                        <Button fx:id="viewOrdersButton" layoutX="114.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewOrdersButtonOnAction" prefHeight="95.0" prefWidth="154.0" text="Vizualizati comenzile" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <HBox fx:id="setChosenTask" prefHeight="608.0" prefWidth="911.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="608.0" prefWidth="907.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label prefHeight="75.0" prefWidth="444.0" text="Comenzi Curente:" textFill="#e49494">
+                           <font>
+                              <Font name="Ink Free" size="55.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

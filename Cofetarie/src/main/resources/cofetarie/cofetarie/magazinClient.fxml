@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cofetarie.cofetarie.MarketController">
+   <children>
+      <BorderPane layoutY="1.0" prefHeight="810.0" prefWidth="463.0" style="-fx-background-color: #F5DDF4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="810.0" prefWidth="428.0" style="-fx-background-color: #E3CFF4;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="148.0" prefWidth="418.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="134.0" prefWidth="337.0" text="Cofetarie" textFill="#b26969">
+                           <font>
+                              <Font name="Gabriola" size="87.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="chosenCakeCard" prefHeight="648.0" prefWidth="428.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="cakeNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="197.0" text="Amandina">
+                                 <font>
+                                    <Font name="Georgia" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="cakePriceLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="205.0" text="9,0 RON / kg" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Georgia" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="cakeImg" fitHeight="278.0" fitWidth="417.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pictures/amandina.jpg" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="44.0" prefWidth="190.0" text="Selectati nr de felii">
+                                 <font>
+                                    <Font name="Cambria" size="22.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="combobox1" prefHeight="54.0" prefWidth="205.0" promptText="1" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="413.0" prefHeight="45.0" prefWidth="200.0">
+                           <children>
+                              <Separator prefHeight="22.0" prefWidth="162.0" />
+                              <Label contentDisplay="CENTER" prefHeight="22.0" prefWidth="42.0" text=" SAU">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="217.0" layoutY="10.0" prefHeight="22.0" prefWidth="183.0" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="446.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="44.0" prefWidth="196.0" text="Kg">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="combobox2" prefHeight="56.0" prefWidth="207.0" promptText="Alegeti cantitatea" />
+                           </children>
+                        </HBox>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="270.0" text="Adauga in cos">
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="810.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="540.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="100.0" prefWidth="239.0" text="Cos de cumparaturi">
+                           <font>
+                              <Font name="Cambria" size="27.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="89.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pictures/Shopping-Cart.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="710.0" prefWidth="820.0">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="29.0" prefWidth="68.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right></BorderPane>
+   </children>
+</AnchorPane>

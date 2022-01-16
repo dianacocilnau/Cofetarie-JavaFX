@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="144.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cofetarie.cofetarie.Comanda">
+   <children>
+      <Label layoutX="24.0" layoutY="33.0" prefHeight="78.0" prefWidth="256.0" text="Tort Mousse">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="33.0" prefHeight="78.0" prefWidth="192.0" text="3 kg">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="199.0" layoutX="591.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/Tort%20Trio%20Mousse.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
